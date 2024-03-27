@@ -15,7 +15,7 @@ Nevertheless, in this approach, a compressions methods have been tested to find 
 The easiest way is installing git from source:
 
 ``` bash
-pip install git+
+pip install git+https://github.com/markusMM/marmei185.git
 ```
 Another method would be to simply clone this repository, create a new python environment and run:
 
