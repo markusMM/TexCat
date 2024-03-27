@@ -1,4 +1,4 @@
-from flask import Flask, request
+/from flask import Flask, request
 from flask_restful import Resource, Api
 import pickle
 import pandas as pd
@@ -14,7 +14,7 @@ class prediction(Resource):
     def get(self, text):
         text = [text]
         df = pd.DataFrame(text, columns=['text'])
-        model = pickle.load(open('texcat.pkl', 'rb'))
+        model = pickle.load(open('model/texcat.pkl', 'rb'))
         prediction = model.predict(df)
         return prediction
 
