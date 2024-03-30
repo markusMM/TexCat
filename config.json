@@ -1,0 +1,14 @@
+{
+    "features": "text_enc_pc",
+    "model_path": "model/texcat.pkl",
+    "label_mapping": {
+        "ft": 0,
+        "mr": 1,
+        "ct": 2,
+        "pkg": 3,
+        "ch": 4,
+        "cnc": 5
+    },
+    "nlp_model": "xx_sent_ud_sm",
+    "pca_path": "model/pca_22.pkl"
+}

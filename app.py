@@ -1,24 +1,22 @@
-/from flask import Flask, request
+from flask import Flask
 from flask_restful import Resource, Api
-import pickle
-import pandas as pd
 from flask_cors import CORS
+from src import predictor
 
 
 app = Flask(__name__)
 CORS(app)
 api = Api(app)
 
-#prediction api call
+
+# prediction api call
 class prediction(Resource):
     def get(self, text):
-        text = [text]
-        df = pd.DataFrame(text, columns=['text'])
-        model = pickle.load(open('model/texcat.pkl', 'rb'))
-        prediction = model.predict(df)
+        prediction = predictor.categorize(text)
         return prediction
 
-api.add_resource(prediction, '/prediction/<str:text>')
 
-if __name__ == '__main__':
+api.add_resource(prediction, "/prediction/<string:category>")
+
+if __name__ == "__main__":
     app.run(debug=True)

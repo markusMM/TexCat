@@ -8,4 +8,5 @@ spacy
 spacy-fastlang
 spacy-language-detection
 transformers
-open-clip-torch
+flask
+flask_cors
