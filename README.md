@@ -19,19 +19,25 @@ The text was ecoded by a HerBERT model and projected to 22 principle components 
 
 ## File Structure
 
-scr
-  text_encoding.py - for text encoding
-  compression.py - for feature dimensionality reduction
-  preprocessing.py - for high level pre-processings
-  common.py - all common variables (infered from config.json)
+scr<br>
+  text_encoding.py - for text encoding<br>
+  compression.py - for feature dimensionality reduction<br>
+  preprocessing.py - for high level pre-processings<br>
+  common.py - all common variables (infered from config.json)<br>
   predictor.py - final prediction function
-model
-  texcat.pkl - categorization model
+  
+model<br>
+  texcat.pkl - categorization model<br>
   pca_22.pkl - PCA compressoin model for 22 components
+
 README.md - this file
+
 app.py - the API
+
 config.json - the default config (loading the pretrained model)
+
 requirements.txt - the requirements running this app
+
 .gitignore - terms to ignore by git
 
 ## Installation
