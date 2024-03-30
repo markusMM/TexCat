@@ -1,0 +1,11 @@
+python=3.9
+numpy
+scipy
+pandas
+scikit-learn
+pytorch
+spacy
+spacy-fastlang
+spacy-language-detection
+transformers
+open-clip-torch
