@@ -1,5 +1,5 @@
-# marmei185
-DS coding challenge: TexCat
+# TexCat
+DS coding challenge: Text Categorization
 
 ## Abstract
 
