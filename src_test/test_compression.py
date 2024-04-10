@@ -2,7 +2,7 @@ import unittest
 import pandas as pd
 from sklearn.decomposition import PCA
 import numpy as np
-from your_script import ca_pca
+from src.compression import ca_pca
 
 
 class TestCAPCA(unittest.TestCase):
