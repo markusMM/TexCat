@@ -1,6 +1,6 @@
 import unittest
 import torch
-from src.encode_test import average_pool
+from src.encode_test import average_pool, encode_test, enc_herbert
 
 
 class TestAveragePool(unittest.TestCase):
